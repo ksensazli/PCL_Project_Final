@@ -12,7 +12,7 @@ public:
     void colorizingPCD(string);
     /// Display the point cloud data after the colorizing
     void viewerPCD(PointCloud<PointXYZRGB>::Ptr);
-    /// This performs extract the euclidean clusters
+    /// This performs extract the euclidean clusters to different PCD files
     void extract_EC();
 
 private:
