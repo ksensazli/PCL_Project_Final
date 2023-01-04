@@ -8,8 +8,11 @@ public:
     Segmentation();
     ~Segmentation();
 
+    /// Colorizing the all segments/edges of the given PCD file
     void colorizingPCD(string);
+    /// Display the point cloud data after the colorizing
     void viewerPCD(PointCloud<PointXYZRGB>::Ptr);
+    /// This performs extract the euclidean clusters
     void extract_EC();
 
 private:

@@ -8,9 +8,13 @@ public:
     Region_Growing(string);
     ~Region_Growing();
 
+    /// This creates a NormalEstimation object that can be used to compute normals for a point cloud.
     void estimation();
+    /// This creates a RegionGrowing object that can be used to segment a point cloud into clusters.
     void growRegion(search::Search<PointXYZ>::Ptr, PointCloud<Normal>::Ptr);
+    /// This prints the some cluster datas.
     void print(vector<PointIndices>);
+    /// Display the point cloud with applied region growing segmentation
     void viewer_RG(PointCloud<PointXYZRGB>::Ptr);
 
 private:
