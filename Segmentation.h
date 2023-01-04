@@ -8,8 +8,13 @@ public:
     Segmentation();
     ~Segmentation();
 
-    CommonProcesses commonProcesses;
-    void colorizingPCD();
+    void colorizingPCD(string);
+    void viewerPCD(PointCloud<PointXYZRGB>::Ptr);
+    void extract_EC();
+
+private:
+    /// cloud is a variable derived from type PointCloud and in the format XYZ
+    PointCloud<PointXYZ>::Ptr cloud;
 
 };
 

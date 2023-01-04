@@ -1,6 +1,7 @@
 #include "CommonProcesses.h"
 
-CommonProcesses::CommonProcesses() {
+CommonProcesses::CommonProcesses()
+{
 
 }
 
