@@ -17,5 +17,7 @@ int main() {
     //commonProcesses.samplePCD();
     //commonProcesses.viewPCD();
 
+    segmentation.colorizingPCD();
+
     return 0;
 }

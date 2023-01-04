@@ -10,11 +10,12 @@ Segmentation::~Segmentation() {
 
 void Segmentation::colorizingPCD() {
     PointCloud<PointXYZRGB>::Ptr color_cloud(new PointCloud<PointXYZRGB>);
-    for (size_t i = 0; i < cloud->points.size(); i++) {
+
+    for (size_t i = 0; i < commonProcesses.getCloud()->points.size(); i++) {
         PointXYZRGB point;
-        point.x = cloud->points[i].x;
-        point.y = cloud->points[i].y;
-        point.z = cloud->points[i].z;
+        point.x = commonProcesses.getCloud()->points[i].x;
+        point.y = commonProcesses.getCloud()->points[i].y;
+        point.z = commonProcesses.getCloud()->points[i].z;
         point.r = 255;
         point.g = 0;
         point.b = 0;

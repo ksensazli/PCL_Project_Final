@@ -8,6 +8,7 @@ public:
     Segmentation();
     ~Segmentation();
 
+    CommonProcesses commonProcesses;
     void colorizingPCD();
 
 };

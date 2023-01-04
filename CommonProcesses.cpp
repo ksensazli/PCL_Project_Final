@@ -33,8 +33,6 @@ void CommonProcesses::showPCD_data(string file_path) {
         }
         cout << "    " << point.x << " " << point.y << " " << point.z << endl;
     }
-
-
 }
 
 void CommonProcesses::scalePCD(double multiplier, string file_path) {
@@ -46,9 +44,12 @@ void CommonProcesses::scalePCD(double multiplier, string file_path) {
 }
 
 void CommonProcesses::samplePCD() {
-    /*UniformSampling<PointXYZ> uniformSampling;
+    // ------------------------------!!
+    // This sampling code not working!!
+    // ------------------------------!!
+    UniformSampling<PointXYZ> uniformSampling;
     uniformSampling.setInputCloud(this->cloud);
-    uniformSampling.filter(*this->cloud);*/
+    uniformSampling.filter(*this->cloud);
 }
 
 void CommonProcesses::viewPCD() {
