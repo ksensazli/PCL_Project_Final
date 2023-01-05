@@ -7,7 +7,7 @@ Object Oriented Programming I Course PCL Project Final
 &emsp; This is a C++ class called CommonProcesses that provides functions for working with point cloud data stored in PCD (Point Cloud Data) files.
 The class has a member variable cloud of type PointCloud<PointXYZ> which is a data structure for storing point cloud data in the PCL (Point Cloud Library) library. <br />
  <br />&emsp; The class has the following functions: <br />
-• readPCD_file(string file_path) - This function reads a PCD file from the given file_path and stores the data in the cloud member variable. If the file could not be read, it prints an error message. <br />
+ <span style="color: red">• readPCD_file(string file_path)</span> - This function reads a PCD file from the given file_path and stores the data in the cloud member variable. If the file could not be read, it prints an error message. <br />
 • showPCD_data(string file_path) - This function iterates through the points in the cloud member variable and prints the x, y, and z coordinates of each point. It also stores the x, y, and z coordinates in dynamic arrays pointX_Pcd, pointY_Pcd, and pointZ_Pcd respectively.<br />
 • scalePCD(double multiplier, string file_path) - This function scales the cloud member variable by the given multiplier and then prints the number of points in the scaled cloud. <br />
 • samplePCD() - This function uses the UniformSampling filter from the PCL library to downsample the cloud member variable. <br />
