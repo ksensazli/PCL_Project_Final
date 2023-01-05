@@ -1,0 +1,109 @@
+\hypertarget{classSegmentation}{}\doxysection{Segmentation Class Reference}
+\label{classSegmentation}\index{Segmentation@{Segmentation}}
+
+
+{\ttfamily \#include $<$Segmentation.\+h$>$}
+
+
+
+Inheritance diagram for Segmentation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classSegmentation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Segmentation\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classSegmentation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSegmentation_a966891da37798baabb99bf0144d47675}{Segmentation}} ()
+\item 
+\mbox{\hyperlink{classSegmentation_ab346c55c2cc6c6269929ac065c5eb44a}{$\sim$\+Segmentation}} ()
+\item 
+void \mbox{\hyperlink{classSegmentation_ac2039c19b7a758274322097a686aa699}{colorizing\+P\+CD}} (string)
+\begin{DoxyCompactList}\small\item\em Colorizing the all segments/edges of the given P\+CD file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSegmentation_ad6ad6d56bbcafe034a6b6dc6f3197c8f}{viewer\+P\+CD}} (Point\+Cloud$<$ Point\+X\+Y\+Z\+R\+GB $>$\+::Ptr)
+\begin{DoxyCompactList}\small\item\em Display the point cloud data after the colorizing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSegmentation_a9dae2fe5dcbe66797689aeed075b20e8}{extract\+\_\+\+EC}} ()
+\begin{DoxyCompactList}\small\item\em This performs extract the euclidean clusters to different P\+CD files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Point\+Cloud$<$ Point\+X\+YZ $>$\+::Ptr \mbox{\hyperlink{classSegmentation_ae5ec87c913d4604ac6bde22da31566d8}{cloud}}
+\begin{DoxyCompactList}\small\item\em cloud is a variable derived from type Point\+Cloud and in the format X\+YZ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSegmentation_a966891da37798baabb99bf0144d47675}\label{classSegmentation_a966891da37798baabb99bf0144d47675}} 
+\index{Segmentation@{Segmentation}!Segmentation@{Segmentation}}
+\index{Segmentation@{Segmentation}!Segmentation@{Segmentation}}
+\doxysubsubsection{\texorpdfstring{Segmentation()}{Segmentation()}}
+{\footnotesize\ttfamily Segmentation\+::\+Segmentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSegmentation_ab346c55c2cc6c6269929ac065c5eb44a}\label{classSegmentation_ab346c55c2cc6c6269929ac065c5eb44a}} 
+\index{Segmentation@{Segmentation}!````~Segmentation@{$\sim$Segmentation}}
+\index{````~Segmentation@{$\sim$Segmentation}!Segmentation@{Segmentation}}
+\doxysubsubsection{\texorpdfstring{$\sim$Segmentation()}{~Segmentation()}}
+{\footnotesize\ttfamily Segmentation\+::$\sim$\+Segmentation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSegmentation_ac2039c19b7a758274322097a686aa699}\label{classSegmentation_ac2039c19b7a758274322097a686aa699}} 
+\index{Segmentation@{Segmentation}!colorizingPCD@{colorizingPCD}}
+\index{colorizingPCD@{colorizingPCD}!Segmentation@{Segmentation}}
+\doxysubsubsection{\texorpdfstring{colorizingPCD()}{colorizingPCD()}}
+{\footnotesize\ttfamily void Segmentation\+::colorizing\+P\+CD (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Colorizing the all segments/edges of the given P\+CD file. 
+
+\mbox{\Hypertarget{classSegmentation_a9dae2fe5dcbe66797689aeed075b20e8}\label{classSegmentation_a9dae2fe5dcbe66797689aeed075b20e8}} 
+\index{Segmentation@{Segmentation}!extract\_EC@{extract\_EC}}
+\index{extract\_EC@{extract\_EC}!Segmentation@{Segmentation}}
+\doxysubsubsection{\texorpdfstring{extract\_EC()}{extract\_EC()}}
+{\footnotesize\ttfamily void Segmentation\+::extract\+\_\+\+EC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This performs extract the euclidean clusters to different P\+CD files. 
+
+\mbox{\Hypertarget{classSegmentation_ad6ad6d56bbcafe034a6b6dc6f3197c8f}\label{classSegmentation_ad6ad6d56bbcafe034a6b6dc6f3197c8f}} 
+\index{Segmentation@{Segmentation}!viewerPCD@{viewerPCD}}
+\index{viewerPCD@{viewerPCD}!Segmentation@{Segmentation}}
+\doxysubsubsection{\texorpdfstring{viewerPCD()}{viewerPCD()}}
+{\footnotesize\ttfamily void Segmentation\+::viewer\+P\+CD (\begin{DoxyParamCaption}\item[{Point\+Cloud$<$ Point\+X\+Y\+Z\+R\+GB $>$\+::Ptr}]{view\+Cloud }\end{DoxyParamCaption})}
+
+
+
+Display the point cloud data after the colorizing. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSegmentation_ae5ec87c913d4604ac6bde22da31566d8}\label{classSegmentation_ae5ec87c913d4604ac6bde22da31566d8}} 
+\index{Segmentation@{Segmentation}!cloud@{cloud}}
+\index{cloud@{cloud}!Segmentation@{Segmentation}}
+\doxysubsubsection{\texorpdfstring{cloud}{cloud}}
+{\footnotesize\ttfamily Point\+Cloud$<$Point\+X\+YZ$>$\+::Ptr Segmentation\+::cloud\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cloud is a variable derived from type Point\+Cloud and in the format X\+YZ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Segmentation_8h}{Segmentation.\+h}}\item 
+\mbox{\hyperlink{Segmentation_8cpp}{Segmentation.\+cpp}}\end{DoxyCompactItemize}

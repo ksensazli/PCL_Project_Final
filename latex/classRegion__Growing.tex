@@ -1,0 +1,121 @@
+\hypertarget{classRegion__Growing}{}\doxysection{Region\+\_\+\+Growing Class Reference}
+\label{classRegion__Growing}\index{Region\_Growing@{Region\_Growing}}
+
+
+{\ttfamily \#include $<$Region\+\_\+\+Growing.\+h$>$}
+
+
+
+Inheritance diagram for Region\+\_\+\+Growing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classRegion__Growing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Region\+\_\+\+Growing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classRegion__Growing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRegion__Growing_a0f672873ae33e2411b89a6ac30276036}{Region\+\_\+\+Growing}} (string)
+\item 
+\mbox{\hyperlink{classRegion__Growing_a63329151471d23967b9f099be250ea62}{$\sim$\+Region\+\_\+\+Growing}} ()
+\item 
+void \mbox{\hyperlink{classRegion__Growing_a5d4bb43316b05dc9b9732afeece9ee9a}{estimation}} ()
+\begin{DoxyCompactList}\small\item\em This creates a Normal\+Estimation object that can be used to compute normals for a point cloud. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegion__Growing_ad278b99a510417320ce6c560240a6d7e}{grow\+Region}} (search\+::\+Search$<$ Point\+X\+YZ $>$\+::Ptr, Point\+Cloud$<$ Normal $>$\+::Ptr)
+\begin{DoxyCompactList}\small\item\em This creates a Region\+Growing object that can be used to segment a point cloud into clusters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegion__Growing_af130978434c4ef143664fe28e1d014f0}{print}} (vector$<$ Point\+Indices $>$)
+\begin{DoxyCompactList}\small\item\em This prints the some cluster datas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegion__Growing_aeeafbd2313965feba098f7e6a033ff67}{viewer\+\_\+\+RG}} (Point\+Cloud$<$ Point\+X\+Y\+Z\+R\+GB $>$\+::Ptr)
+\begin{DoxyCompactList}\small\item\em Display the point cloud with applied region growing segmentation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Point\+Cloud$<$ Point\+X\+YZ $>$\+::Ptr \mbox{\hyperlink{classRegion__Growing_a604410c0712c074d4403d654a3108c40}{cloud}}
+\begin{DoxyCompactList}\small\item\em cloud is a variable derived from type Point\+Cloud and in the format X\+YZ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRegion__Growing_a0f672873ae33e2411b89a6ac30276036}\label{classRegion__Growing_a0f672873ae33e2411b89a6ac30276036}} 
+\index{Region\_Growing@{Region\_Growing}!Region\_Growing@{Region\_Growing}}
+\index{Region\_Growing@{Region\_Growing}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{Region\_Growing()}{Region\_Growing()}}
+{\footnotesize\ttfamily Region\+\_\+\+Growing\+::\+Region\+\_\+\+Growing (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRegion__Growing_a63329151471d23967b9f099be250ea62}\label{classRegion__Growing_a63329151471d23967b9f099be250ea62}} 
+\index{Region\_Growing@{Region\_Growing}!````~Region\_Growing@{$\sim$Region\_Growing}}
+\index{````~Region\_Growing@{$\sim$Region\_Growing}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{$\sim$Region\_Growing()}{~Region\_Growing()}}
+{\footnotesize\ttfamily Region\+\_\+\+Growing\+::$\sim$\+Region\+\_\+\+Growing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRegion__Growing_a5d4bb43316b05dc9b9732afeece9ee9a}\label{classRegion__Growing_a5d4bb43316b05dc9b9732afeece9ee9a}} 
+\index{Region\_Growing@{Region\_Growing}!estimation@{estimation}}
+\index{estimation@{estimation}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{estimation()}{estimation()}}
+{\footnotesize\ttfamily void Region\+\_\+\+Growing\+::estimation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This creates a Normal\+Estimation object that can be used to compute normals for a point cloud. 
+
+\mbox{\Hypertarget{classRegion__Growing_ad278b99a510417320ce6c560240a6d7e}\label{classRegion__Growing_ad278b99a510417320ce6c560240a6d7e}} 
+\index{Region\_Growing@{Region\_Growing}!growRegion@{growRegion}}
+\index{growRegion@{growRegion}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{growRegion()}{growRegion()}}
+{\footnotesize\ttfamily void Region\+\_\+\+Growing\+::grow\+Region (\begin{DoxyParamCaption}\item[{search\+::\+Search$<$ Point\+X\+YZ $>$\+::Ptr}]{tree,  }\item[{Point\+Cloud$<$ Normal $>$\+::Ptr}]{normals }\end{DoxyParamCaption})}
+
+
+
+This creates a Region\+Growing object that can be used to segment a point cloud into clusters. 
+
+\mbox{\Hypertarget{classRegion__Growing_af130978434c4ef143664fe28e1d014f0}\label{classRegion__Growing_af130978434c4ef143664fe28e1d014f0}} 
+\index{Region\_Growing@{Region\_Growing}!print@{print}}
+\index{print@{print}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Region\+\_\+\+Growing\+::print (\begin{DoxyParamCaption}\item[{vector$<$ Point\+Indices $>$}]{clusters }\end{DoxyParamCaption})}
+
+
+
+This prints the some cluster datas. 
+
+\mbox{\Hypertarget{classRegion__Growing_aeeafbd2313965feba098f7e6a033ff67}\label{classRegion__Growing_aeeafbd2313965feba098f7e6a033ff67}} 
+\index{Region\_Growing@{Region\_Growing}!viewer\_RG@{viewer\_RG}}
+\index{viewer\_RG@{viewer\_RG}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{viewer\_RG()}{viewer\_RG()}}
+{\footnotesize\ttfamily void Region\+\_\+\+Growing\+::viewer\+\_\+\+RG (\begin{DoxyParamCaption}\item[{Point\+Cloud$<$ Point\+X\+Y\+Z\+R\+GB $>$\+::Ptr}]{view\+Cloud }\end{DoxyParamCaption})}
+
+
+
+Display the point cloud with applied region growing segmentation. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRegion__Growing_a604410c0712c074d4403d654a3108c40}\label{classRegion__Growing_a604410c0712c074d4403d654a3108c40}} 
+\index{Region\_Growing@{Region\_Growing}!cloud@{cloud}}
+\index{cloud@{cloud}!Region\_Growing@{Region\_Growing}}
+\doxysubsubsection{\texorpdfstring{cloud}{cloud}}
+{\footnotesize\ttfamily Point\+Cloud$<$Point\+X\+YZ$>$\+::Ptr Region\+\_\+\+Growing\+::cloud\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cloud is a variable derived from type Point\+Cloud and in the format X\+YZ 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Region__Growing_8h}{Region\+\_\+\+Growing.\+h}}\item 
+\mbox{\hyperlink{Region__Growing_8cpp}{Region\+\_\+\+Growing.\+cpp}}\end{DoxyCompactItemize}

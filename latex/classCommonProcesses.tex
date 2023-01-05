@@ -1,0 +1,152 @@
+\hypertarget{classCommonProcesses}{}\doxysection{Common\+Processes Class Reference}
+\label{classCommonProcesses}\index{CommonProcesses@{CommonProcesses}}
+
+
+{\ttfamily \#include $<$Common\+Processes.\+h$>$}
+
+
+
+Inheritance diagram for Common\+Processes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classCommonProcesses__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCommonProcesses_ae8d608623a6e580c208af289cfd9776a}{Common\+Processes}} ()
+\item 
+\mbox{\hyperlink{classCommonProcesses_aa9b88d7eaf4085e7fac0e400c7994693}{$\sim$\+Common\+Processes}} ()
+\item 
+void \mbox{\hyperlink{classCommonProcesses_af2ac073b5dac2b970d7ac0b66fa63ea2}{read\+P\+C\+D\+\_\+file}} (string)
+\begin{DoxyCompactList}\small\item\em Load the point cloud from the given P\+CD file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommonProcesses_a3286dda935c9586440b09035186c4113}{show\+P\+C\+D\+\_\+data}} (string)
+\begin{DoxyCompactList}\small\item\em Show the data of the point cloud data (in console) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommonProcesses_ac83656eb43f8b7b40f8d9e7b1b78c503}{scale\+P\+CD}} (double, string)
+\begin{DoxyCompactList}\small\item\em Scaling the point cloud data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommonProcesses_a3170f3ec3a11261d49d870e310a195a8}{sample\+P\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Uniform sampling the point cloud file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommonProcesses_a001511ec99b85a216cd33abd4c75a92f}{view\+P\+CD}} ()
+\begin{DoxyCompactList}\small\item\em Display the point cloud. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Point\+Cloud$<$ Point\+X\+YZ $>$\+::Ptr \mbox{\hyperlink{classCommonProcesses_a59d84558bf23b10379442255662da381}{cloud}}
+\begin{DoxyCompactList}\small\item\em cloud is a variable derived from type Point\+Cloud and in the format X\+YZ \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{classCommonProcesses_a059ed3eccfbb15274838acbb47ec8e77}{point\+X\+\_\+\+Pcd}}
+\begin{DoxyCompactList}\small\item\em point\+X\+\_\+\+Pcd, point\+Y\+\_\+\+Pcd, point\+Z\+\_\+\+Pcd used for dynamic arrays \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{classCommonProcesses_a48f7ede72b4d93b7969075dc051d8782}{point\+Y\+\_\+\+Pcd}}
+\item 
+double $\ast$ \mbox{\hyperlink{classCommonProcesses_a71d38b00239e383069c68dbe644164d7}{point\+Z\+\_\+\+Pcd}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommonProcesses_ae8d608623a6e580c208af289cfd9776a}\label{classCommonProcesses_ae8d608623a6e580c208af289cfd9776a}} 
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\index{CommonProcesses@{CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{CommonProcesses()}{CommonProcesses()}}
+{\footnotesize\ttfamily Common\+Processes\+::\+Common\+Processes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCommonProcesses_aa9b88d7eaf4085e7fac0e400c7994693}\label{classCommonProcesses_aa9b88d7eaf4085e7fac0e400c7994693}} 
+\index{CommonProcesses@{CommonProcesses}!````~CommonProcesses@{$\sim$CommonProcesses}}
+\index{````~CommonProcesses@{$\sim$CommonProcesses}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{$\sim$CommonProcesses()}{~CommonProcesses()}}
+{\footnotesize\ttfamily Common\+Processes\+::$\sim$\+Common\+Processes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommonProcesses_af2ac073b5dac2b970d7ac0b66fa63ea2}\label{classCommonProcesses_af2ac073b5dac2b970d7ac0b66fa63ea2}} 
+\index{CommonProcesses@{CommonProcesses}!readPCD\_file@{readPCD\_file}}
+\index{readPCD\_file@{readPCD\_file}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{readPCD\_file()}{readPCD\_file()}}
+{\footnotesize\ttfamily void Common\+Processes\+::read\+P\+C\+D\+\_\+file (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Load the point cloud from the given P\+CD file. 
+
+\mbox{\Hypertarget{classCommonProcesses_a3170f3ec3a11261d49d870e310a195a8}\label{classCommonProcesses_a3170f3ec3a11261d49d870e310a195a8}} 
+\index{CommonProcesses@{CommonProcesses}!samplePCD@{samplePCD}}
+\index{samplePCD@{samplePCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{samplePCD()}{samplePCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::sample\+P\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Uniform sampling the point cloud file. 
+
+\mbox{\Hypertarget{classCommonProcesses_ac83656eb43f8b7b40f8d9e7b1b78c503}\label{classCommonProcesses_ac83656eb43f8b7b40f8d9e7b1b78c503}} 
+\index{CommonProcesses@{CommonProcesses}!scalePCD@{scalePCD}}
+\index{scalePCD@{scalePCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{scalePCD()}{scalePCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::scale\+P\+CD (\begin{DoxyParamCaption}\item[{double}]{multiplier,  }\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Scaling the point cloud data. 
+
+\mbox{\Hypertarget{classCommonProcesses_a3286dda935c9586440b09035186c4113}\label{classCommonProcesses_a3286dda935c9586440b09035186c4113}} 
+\index{CommonProcesses@{CommonProcesses}!showPCD\_data@{showPCD\_data}}
+\index{showPCD\_data@{showPCD\_data}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{showPCD\_data()}{showPCD\_data()}}
+{\footnotesize\ttfamily void Common\+Processes\+::show\+P\+C\+D\+\_\+data (\begin{DoxyParamCaption}\item[{string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+
+
+Show the data of the point cloud data (in console) 
+
+\mbox{\Hypertarget{classCommonProcesses_a001511ec99b85a216cd33abd4c75a92f}\label{classCommonProcesses_a001511ec99b85a216cd33abd4c75a92f}} 
+\index{CommonProcesses@{CommonProcesses}!viewPCD@{viewPCD}}
+\index{viewPCD@{viewPCD}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{viewPCD()}{viewPCD()}}
+{\footnotesize\ttfamily void Common\+Processes\+::view\+P\+CD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display the point cloud. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCommonProcesses_a59d84558bf23b10379442255662da381}\label{classCommonProcesses_a59d84558bf23b10379442255662da381}} 
+\index{CommonProcesses@{CommonProcesses}!cloud@{cloud}}
+\index{cloud@{cloud}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{cloud}{cloud}}
+{\footnotesize\ttfamily Point\+Cloud$<$Point\+X\+YZ$>$\+::Ptr Common\+Processes\+::cloud\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+cloud is a variable derived from type Point\+Cloud and in the format X\+YZ 
+
+\mbox{\Hypertarget{classCommonProcesses_a059ed3eccfbb15274838acbb47ec8e77}\label{classCommonProcesses_a059ed3eccfbb15274838acbb47ec8e77}} 
+\index{CommonProcesses@{CommonProcesses}!pointX\_Pcd@{pointX\_Pcd}}
+\index{pointX\_Pcd@{pointX\_Pcd}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{pointX\_Pcd}{pointX\_Pcd}}
+{\footnotesize\ttfamily double$\ast$ Common\+Processes\+::point\+X\+\_\+\+Pcd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+point\+X\+\_\+\+Pcd, point\+Y\+\_\+\+Pcd, point\+Z\+\_\+\+Pcd used for dynamic arrays 
+
+\mbox{\Hypertarget{classCommonProcesses_a48f7ede72b4d93b7969075dc051d8782}\label{classCommonProcesses_a48f7ede72b4d93b7969075dc051d8782}} 
+\index{CommonProcesses@{CommonProcesses}!pointY\_Pcd@{pointY\_Pcd}}
+\index{pointY\_Pcd@{pointY\_Pcd}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{pointY\_Pcd}{pointY\_Pcd}}
+{\footnotesize\ttfamily double $\ast$ Common\+Processes\+::point\+Y\+\_\+\+Pcd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classCommonProcesses_a71d38b00239e383069c68dbe644164d7}\label{classCommonProcesses_a71d38b00239e383069c68dbe644164d7}} 
+\index{CommonProcesses@{CommonProcesses}!pointZ\_Pcd@{pointZ\_Pcd}}
+\index{pointZ\_Pcd@{pointZ\_Pcd}!CommonProcesses@{CommonProcesses}}
+\doxysubsubsection{\texorpdfstring{pointZ\_Pcd}{pointZ\_Pcd}}
+{\footnotesize\ttfamily double $\ast$ Common\+Processes\+::point\+Z\+\_\+\+Pcd\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{CommonProcesses_8h}{Common\+Processes.\+h}}\item 
+\mbox{\hyperlink{CommonProcesses_8cpp}{Common\+Processes.\+cpp}}\end{DoxyCompactItemize}
