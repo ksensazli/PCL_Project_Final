@@ -1,5 +1,5 @@
-# PCL_Project_Final
-Object Oriented Programming I Course PCL Project Final
+# Point Cloud Library Project for Object Oriented Programming I Course
+Object Oriented Programming I Course PCL Project
 
 # ➢ Description
 
