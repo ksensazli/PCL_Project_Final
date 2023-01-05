@@ -41,12 +41,12 @@ Libraries : PCL(Point Cloud Library) 1.10 <br />
 CMake : CMake version 3.24 <br />
 C++ Standart : C++ 11 <br />
 # ➢ How to install PCL 1.10 on Ubuntu 20.04.5 LTS
-To install PCL 1.10 in Ubuntu 20.04.5 LTS environment, some commands are needed first. The commands I used during the installation phase are as follows: <br />
+To install PCL 1.10 in Ubuntu 20.04.5 LTS environment, some commands are needed first. The commands I used during the installation phase are as follows: <br /> <br />
 --sudo apt update <br />
 --sudo apt upgrade <br />
 --sudo apt install build-essentials <br />
--- sudo apt install libpcl-dev <br />
-After the packages triggered by the commands are installed, we need to prepare a CMakeList by creating a new project on CLion 2022.3. Example CMakeList is given below: <br />
+-- sudo apt install libpcl-dev <br /> <br />
+After the packages triggered by the commands are installed, we need to prepare a CMakeList by creating a new project on CLion 2022.3. Example CMakeList is given below: <br /> <br />
 cmake_minimum_required(VERSION 3.24) <br />
 project(PCL_Project_v1) <br />
 set(CMAKE_CXX_STANDARD 11) <br />
@@ -55,7 +55,7 @@ include_directories(${PCL_INCLUDE_DIRS}) <br />
 link_directories(${PCL_LIBRARY_DIRS}) <br />
 add_definitions(${PCL_DEFINITIONS}) <br />
 add_executable(PCL_Project_v1 main.cpp) <br />
-target_link_libraries (PCL_Project_v1 ${PCL_LIBRARIES}) <br />
+target_link_libraries (PCL_Project_v1 ${PCL_LIBRARIES}) <br /> <br />
 With this CMakeList, we introduce the directories containing all the necessary files of the PCL library to the IDE. I also require the minimum PCL 1.10 library to be installed for the project to run. <br />
 # ➢ How to run PCL_Project_v1
 To run this project, it is sufficient to remove the comment line (//) command at the beginning of the desired methods from the objects left ready in main.cpp. The documentation can be reviewed for the functionality of the desired methods. The variable given as file_path must contain the file path of the corresponding pcd file. For example; In the CLion 2022.3 environment, the desired path can be given to compile and run this project, or when the pcd files are copied into the cmake-build-debug folder in the relevant project folder, it can be run only with the file name without specifying any path.
