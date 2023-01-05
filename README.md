@@ -1,6 +1,8 @@
 # PCL_Project_Final
 Object Oriented Programming I Course PCL Project Final
 
+# ➢ Description
+
 1. CommonProcesses <br /> <br />
 &emsp; This is a C++ class called CommonProcesses that provides functions for working with point cloud data stored in PCD (Point Cloud Data) files. <br />
 The class has a member variable cloud of type PointCloud<PointXYZ> which is a data structure for storing point cloud data in the PCL (Point Cloud Library) library. <br />
