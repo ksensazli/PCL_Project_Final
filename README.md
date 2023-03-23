@@ -46,7 +46,7 @@ C++ Standart : C++ 11 <br />
 To install PCL 1.10 in Ubuntu 20.04.5 LTS environment, some commands are needed first. The commands I used during the installation phase are as follows: <br /> <br />
 --sudo apt update <br />
 --sudo apt upgrade <br />
---sudo apt install build-essentials <br />
+--sudo apt install build-essential <br />
 --sudo apt install libpcl-dev <br /> <br />
 After the packages triggered by the commands are installed, we need to prepare a CMakeList by creating a new project on CLion 2022.3. Example CMakeList is given below: <br /> <br />
 cmake_minimum_required(VERSION 3.24) <br />
