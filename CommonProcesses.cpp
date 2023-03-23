@@ -37,7 +37,7 @@ void CommonProcesses::showPCD_data(string file_path) {
 }
 
 void CommonProcesses::scalePCD(double multiplier, string file_path) {
-    this->cloud->resize(this->cloud->width * multiplier, this->cloud->height * multiplier);
+    //this->cloud->resize(this->cloud->width * multiplier, this->cloud->height * multiplier);
 
     cout << "After the scaling: \n";
     cout << "Loaded " << this->cloud->width * this->cloud->height
